@@ -1,0 +1,6 @@
+# dsh-model-persona 的 Loader 行定义。
+# name 写包名即可：安装时 plugin_manager 会把它链接到 profile 的 node_modules，
+# Loader 以 patch 文件所在目录为锚点解析相对路径/包名。
+- insert:
+    - id: model-persona
+      name: dsh-model-persona

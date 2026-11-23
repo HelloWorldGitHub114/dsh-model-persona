@@ -1,0 +1,67 @@
+{
+  "rules": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek · 鲸鱼娘（大肥鱼）",
+      "nameEn": "DeepSeek · Whale Maid",
+      "match": ["deepseek"],
+      "persona": "deepseek.md"
+    },
+    {
+      "id": "gpt",
+      "name": "GPT · 白发龙娘",
+      "nameEn": "GPT · White Dragon",
+      "match": ["gpt", "chatgpt", "codex", "o1", "o3", "o4", "openai"],
+      "persona": "gpt.md"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini · 异色瞳猫娘",
+      "nameEn": "Gemini · Catgirl",
+      "match": ["gemini", "gemma"],
+      "persona": "gemini.md"
+    },
+    {
+      "id": "claude",
+      "name": "Claude · 冷淡优等生",
+      "nameEn": "Claude · Cool Honor Student",
+      "match": ["claude", "anthropic", "sonnet", "opus", "haiku"],
+      "persona": "claude.md"
+    },
+    {
+      "id": "glm",
+      "name": "GLM · 狐耳少女",
+      "nameEn": "GLM · Fox-Ear Girl",
+      "match": ["glm", "chatglm", "zhipu", "codegeex"],
+      "persona": "glm.md"
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi · 银发书卷少女",
+      "nameEn": "Kimi · Literary Girl",
+      "match": ["kimi", "moonshot"],
+      "persona": "kimi.md"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen · 优雅大小姐",
+      "nameEn": "Qwen · Graceful Lady",
+      "match": ["qwen", "qwq", "tongyi"],
+      "persona": "qwen.md"
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax · 元气声影少女",
+      "nameEn": "MiniMax · Stage Director",
+      "match": ["minimax", "abab"],
+      "persona": "minimax.md"
+    },
+    {
+      "id": "grok",
+      "name": "Grok · 金发大小姐",
+      "nameEn": "Grok · Unfiltered Heiress",
+      "match": ["grok", "xai"],
+      "persona": "grok.md"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Model Personas",
+    "description": "Switch system prompt personas with the active model, including relayed and versioned model IDs. Comes with nine built-in personas, a match tester and editor, and private overrides stored in the local DSH data directory.",
+    "detail": "README.en.md"
+  }
+}

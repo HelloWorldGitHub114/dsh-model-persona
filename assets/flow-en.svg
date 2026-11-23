@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" fill="none">
+  <rect x="0.5" y="0.5" width="1199" height="329" rx="18" fill="#141416" stroke="#2b2b30"/>
+
+  <!-- Header -->
+  <text x="40" y="42" fill="#fafafa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">How It Works: Live Model Detection + Scored Matching + Two-Layer Override</text>
+  <text x="1160" y="42" text-anchor="end" fill="#8e8e98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13">Built on DSH native systemPrompt.section() with zero host mutation</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(40, 74)">
+    <rect x="0" y="0" width="244" height="148" rx="13" fill="#1b1b1f" stroke="#2f2f36"/>
+    <rect x="16" y="16" width="54" height="22" rx="11" fill="#27272d"/>
+    <text x="43" y="31" text-anchor="middle" fill="#e4e4e7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" font-weight="600">STEP 1</text>
+    <text x="16" y="64" fill="#fafafa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600">Read Active Model ID</text>
+    <text x="16" y="90" fill="#9a9aa4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">
+      <tspan x="16" dy="0">Reads modelSelection → live</tspan>
+      <tspan x="16" dy="20">→ options.model in order</tspan>
+      <tspan x="16" dy="20" fill="#71717a">Tracks mid-chat model swaps</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M294 148h26m0 0l-6-6m6 6l-6 6" stroke="#71717a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(332, 74)">
+    <rect x="0" y="0" width="256" height="148" rx="13" fill="#1b1b1f" stroke="#2f2f36"/>
+    <rect x="16" y="16" width="54" height="22" rx="11" fill="#27272d"/>
+    <text x="43" y="31" text-anchor="middle" fill="#e4e4e7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" font-weight="600">STEP 2</text>
+    <text x="16" y="64" fill="#fafafa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600">Scored Specificity Match</text>
+    <text x="16" y="90" fill="#9a9aa4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">
+      <tspan x="16" dy="0">Tokenizes relay pre/suffixes;</tspan>
+      <tspan x="16" dy="20">model segment outranks provider</tspan>
+      <tspan x="16" dy="20" fill="#71717a">Exact versions beat generic tags</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M598 148h26m0 0l-6-6m6 6l-6 6" stroke="#71717a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(636, 74)">
+    <rect x="0" y="0" width="248" height="148" rx="13" fill="#1b1b1f" stroke="#3c3c46"/>
+    <rect x="16" y="16" width="54" height="22" rx="11" fill="#fafafa"/>
+    <text x="43" y="31" text-anchor="middle" fill="#141416" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" font-weight="700">STEP 3</text>
+    <text x="16" y="64" fill="#fafafa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600">Two-Layer Persona Load</text>
+    <text x="16" y="90" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">
+      <tspan x="16" dy="0">Checks ~/.dsh/personas/ first,</tspan>
+      <tspan x="16" dy="20" fill="#9a9aa4">falls back to 9 built-in defaults</tspan>
+      <tspan x="16" dy="20" fill="#9a9aa4">Cached by file mtime &amp; size</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M894 148h26m0 0l-6-6m6 6l-6 6" stroke="#71717a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(932, 74)">
+    <rect x="0" y="0" width="228" height="148" rx="13" fill="#17221e" stroke="#285343"/>
+    <rect x="16" y="16" width="60" height="22" rx="11" fill="#1f3a30"/>
+    <text x="46" y="31" text-anchor="middle" fill="#6ee7b7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" font-weight="600">NATIVE</text>
+    <text x="16" y="64" fill="#fafafa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600">Dynamic Section Inject</text>
+    <text x="16" y="90" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5">
+      <tspan x="16" dy="0">· Empty results are dropped</tspan>
+      <tspan x="16" dy="20">· Live UI tester &amp; rule editor</tspan>
+      <tspan x="16" dy="20">· Personal files stay local</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Strip -->
+  <g transform="translate(40, 246)">
+    <rect x="0" y="0" width="1120" height="52" rx="12" fill="#1a1a1e" stroke="#2c2c33"/>
+    <circle cx="24" cy="26" r="4.5" fill="#34d399"/>
+    <text x="40" y="30.5" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13">
+      <tspan font-weight="600" fill="#fafafa">Zero-Bloat Persistence: </tspan>
+      <tspan>creates no external files when using defaults; writes custom rules to </tspan>
+      <tspan font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#e4e4e7">~/.dsh/personas/rules.json</tspan>
+      <tspan> only when customized.</tspan>
+    </text>
+  </g>
+</svg>

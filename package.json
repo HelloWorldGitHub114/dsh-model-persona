@@ -1,0 +1,63 @@
+{
+  "name": "dsh-model-persona",
+  "version": "1.0.0",
+  "description": "按当前会话模型实时切换并注入对应人设（支持中转站前缀/版本号模糊匹配、内置 9 大模型默认人设与本地私有覆盖）。 · Model-aware dynamic system prompt persona injector for DeepSeek Harness with fuzzy relay matching, 9 built-in personas, UI editor, and local overrides.",
+  "license": "MIT",
+  "author": "HelloWorldGitHub114",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloWorldGitHub114/dsh-model-persona.git"
+  },
+  "homepage": "https://github.com/HelloWorldGitHub114/dsh-model-persona#readme",
+  "bugs": {
+    "url": "https://github.com/HelloWorldGitHub114/dsh-model-persona/issues"
+  },
+  "keywords": [
+    "deepseek", "dsh", "dsh-plugin", "deepseek-harness", "persona", "system-prompt",
+    "roleplay", "character", "multi-model", "模型人设", "角色设定", "动态提示词"
+  ],
+  "type": "module",
+  "main": "./lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "client.js",
+    "cordis.patch.yml",
+    "defaults/",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}
